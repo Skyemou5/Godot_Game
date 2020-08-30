@@ -8,14 +8,38 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Reference",
+"class": "Animal",
+"language": "GDScript",
+"path": "res://tools/Animal.gd"
+}, {
+"base": "Node2D",
+"class": "Character",
+"language": "GDScript",
+"path": "res://scenes/characterBase.gd"
+}, {
+"base": "Animal",
+"class": "Frog",
+"language": "GDScript",
+"path": "res://tools/FrogScript.gd"
+}, {
+"base": "Animal",
+"class": "Horse",
+"language": "GDScript",
+"path": "res://tools/HorseScript.gd"
+} ]
 _global_script_class_icons={
-
+"Animal": "",
+"Character": "",
+"Frog": "",
+"Horse": ""
 }
 
 [application]
 
 config/name="Number Guess"
+run/main_scene="res://scenes/Codetest.tscn"
 config/icon="res://icon.png"
 
 [input]
